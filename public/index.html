@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/style/main.scss">
+    <title>Mrówki game</title>
+</head>
+
+<body>
+
+    <div class="maingame-container">
+        <div class="info-bar">
+            <div id="info-place" class="disabled">
+                <div id="info-img"></div>
+                <div class="info-stats">
+                    <div class="info-details"><span class="info-details__text">Nazwa</span><span class="info-details__name" id="info-details-name">test</span></div>
+                    <div class="info-details"><span class="info-details__text">Pozycja</span><span class="info-details__position" id="info-details-position">test</span></div>
+                    <div class="info-details"><span class="info-details__text">Stamina</span><span class="info-details__stamina" id="info-details-stamina">test</span></div>
+                </div>
+                <div class="info-buttons">
+                    <div class="info-buttons__button" id="info-button-remove">Usuń</div>
+                    <div class="info-buttons__button" id="info-button-move">Przesuń</div>
+                </div>
+            </div>
+            <div id="newGame-button">Start</div>
+
+
+
+        </div>
+        <div id="maingame-content" class="maingame-content">
+            <div id="parameters" class="parameters">
+                <span class="parameters__text">Parametry Startowe</span>
+                <div class="parameters__resolution">
+                    <input type="radio" id="4x4" name="resolution" value="4" checked>
+                    <label for="4x4">4x4</label>
+                    <input type="radio" id="8x8" name="resolution" value="8">
+                    <label for="8x8">8x8</label>
+                    <input type="radio" id="14x14" name="resolution" value="14">
+                    <label for="14x14">14x14</label>
+                </div>
+                <div class="parameters__seed">
+                    <span>Seed</span>
+                    <input id="seedinput" type="number" placeholder="Min 9 numbers">
+                </div>
+                <div class="parameters__button">
+                    <button id="start-game-button">Start</button>
+                </div>
+            </div>
+
+
+
+
+
+
+        </div>
+    </div>
+    <div class="controls-bar">
+        <span class="controls-bar__text">Panel</span>
+        <div class="controls-bar__options">
+            <div id="item-0">Następny ruch</div>
+            <div id="item-1" name="ObjectButton" class="item-nopush"><img height="80px" id="img-1" src="/img/ant.png"></div>
+            <div id="item-2" name="ObjectButton" class="item-nopush"><img height="80px" id="img-2" src="/img/dragon.png"></div>
+            <div id="item-3"></div>
+            <div id="item-4" name="ObjectButton" class="item-nopush"><img height="80px" id="img-3" src="/img/food.png"></div>
+        </div>
+        <div id="controls-bar__content" class="controls-bar__content">
+            
+        </div>
+    </div>
+
+
+
+
+</body>
+
+   
+    <script type="module" src="/src/index.js"></script>
+    
+
+
+
+
+</html>

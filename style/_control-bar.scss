@@ -1,0 +1,147 @@
+@use  "./colors.scss" as *;
+
+.controls-bar
+{
+    height: 100vh;
+    width: 85vw;
+    background: $background-main-color;
+    border: 10px solid $border-button-color;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    padding: 15px;
+
+    &__text
+    {
+        width: 100%;
+        height: 10%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-weight: 700;
+        font-size: 40px;
+        text-shadow: 0px 0px 9px rgb(123, 130, 204);
+        color: #ffffff;
+    }
+
+    &__options
+    {
+        width: 100%;
+        height: 45%;
+        padding: 5px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        gap: 15px;
+    }
+
+    &__content
+    {
+        width: 100%;
+        height: 35%;
+        background: $background-button-color;
+        border: 5px solid $border-button-color;
+        font-size: 26px;
+        color: rgb(189, 187, 187);
+        padding: 5px;
+        text-align: center;
+        
+
+
+    }
+
+    #item-0
+    {
+        background: $background-button-color;
+        border: 4px solid $border-button-color;
+        grid-row-start: 1;
+        grid-column-start: 1;
+        width: 100%;
+        height: 80%;
+        border-radius: 15px;
+        grid-row-end: 2;
+        grid-column-end: 3;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        user-select: none;
+        font-weight: 600;
+        font-size: 25px;
+        padding: 5px;
+        color: white;
+        cursor: pointer;
+    }
+    .item-push
+    {
+        background: #493624;
+    }
+    .item-nopush
+    {
+        background: $background-button-color;
+    }
+    #item-1 {
+
+        
+        border: 4px solid $border-button-color;
+        grid-row-start: 2;
+        grid-column-start: 1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        grid-row-end: 3;
+        grid-column-end: 2;
+        height: 90%;
+        cursor: pointer;
+        
+    
+     }
+     
+     #item-2 {
+     
+        
+        border: 4px solid $border-button-color;
+        height: 90%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        grid-row-start: 2;
+        grid-column-start: 2;
+        grid-row-end: 3;
+        grid-column-end: 3;
+        cursor: pointer;
+        
+
+     }
+     #item-3 {
+     
+        background: $background-button-color;
+        border: 4px solid $border-button-color;
+        grid-row-start: 3;
+        grid-column-start: 2;
+        height: 90%;
+        grid-row-end: 4;
+        grid-column-end: 3;
+        
+     }
+     #item-4 {
+     
+        
+        border: 4px solid $border-button-color;
+        grid-row-start: 3;
+        grid-column-start: 1;
+        height: 90%;
+        grid-row-end: 4;
+        grid-column-end: 2;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+        
+     }
+
+    
+    }
+    .disabled
+     {
+         display: none;
+     }

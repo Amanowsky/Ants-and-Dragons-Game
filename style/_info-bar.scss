@@ -1,0 +1,176 @@
+@use  "./colors" as *;
+
+.info-bar
+{
+    height: 15vh;
+    width: 85vw;
+    background: $background-main-color;
+    border: 10px solid $border-button-color;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    position: relative;
+}
+.info-place
+{
+    height: 100%;
+    width: 70%;
+    background: $background-button-color;
+    border: 3px solid $border-button-color;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+}
+#info-img
+{
+    height: 100%;
+    width: 7%;
+    border: 3px solid $border-button-color;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.info-img-ant
+{
+    background-image: url(/img/ant.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+.info-img-dragon
+{
+    background-image: url(/img/dragon.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+.info-img-food
+{
+
+        background-image: url(/img/food.png);
+        background-size: 100%;
+        background-repeat: no-repeat;
+}
+.info-stats
+{
+    
+    height: 100%;
+    width: 50%;
+    border: 3px solid $border-button-color;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 5px;
+}
+.info-details
+{
+    height: 100%;
+    width: 30%;
+    background: $background-main-color;
+    border: 2px solid $border-button-color;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    &__text
+    {
+        color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 22px;
+        font-weight: 500;
+        text-shadow: 4px 4px 6px rgb(18, 21, 51);
+    }
+    &__name
+    {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 22px;
+        font-weight: 600;
+        color: blue;
+    }
+    &__position
+    {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 22px;
+        font-weight: 600;
+        color: rgb(227, 252, 6);
+    }
+
+    &__stamina
+    {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 22px;
+        font-weight: 600;
+        color: rgb(49, 211, 16);
+    }
+}
+.info-buttons
+{
+    height: 100%;
+    width: 30%;
+    padding: 10px;
+    margin-left: auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    &__button
+    {
+        height: 80%;
+        width: 40%;
+        background: $background-main-color;
+        border: 2px solid $border-button-color;
+        color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 20px;
+        cursor: pointer;
+    }
+    &__buttonOn
+    {
+        height: 80%;
+        width: 40%;
+        background: #493624;
+        border: 2px solid $border-button-color;
+        color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 20px;
+        cursor: pointer;
+    }
+}
+#newGame-button
+{
+    height: 70%;
+    width: 10%;
+    background: $background-button-color;
+    border: 3px solid $border-button-color;
+    border-radius: 10px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 30px;
+    position: absolute;
+    left: 89%;
+}
+#testbutton
+{
+    height: 80%;
+    width: 10%;
+    background: grey;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}

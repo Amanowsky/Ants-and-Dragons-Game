@@ -1,0 +1,35 @@
+@use  "./control-bar.scss";
+@use  "./start-parameters.scss";
+@use  "./info-bar.scss";
+@use  "./maingame-content.scss";
+@use "./colors";
+
+input,button
+{
+    outline: none;
+}
+
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+body
+{
+    height: 100vh;
+    width: 100vw;
+    background: rgb(180, 180, 180);
+    display: flex;
+    align-items: center;
+}
+.maingame-container
+{
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    width: 85vw;
+    align-self: flex-end;
+
+}
