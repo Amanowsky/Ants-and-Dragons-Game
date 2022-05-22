@@ -352,6 +352,7 @@ class Options {
     }
     static downloadStartParameters() {
         //Download game's parameters 
+        if(Verify()==false) return 0;
         var parametersDiv = document.getElementById("parameters");
         let size;
         var resolutionRadio = document.getElementsByName("resolution");
@@ -457,15 +458,21 @@ class Options {
             world.placeDragon(x, y)
         }
         for (var i = 0; i < world.amountFood; i++) {
+            
             x = x + difrensePositionFoods;
+            
             difrensePositionFoods++;
+            
             while (x > size) {
                 y++
+                
                 x = x - size;
+                
             }
             if (y > size) {
                 y = y - size;
             }
+            
             world.placeFood(x, y)
         }
 
@@ -1210,7 +1217,12 @@ function GetTarget(e) {
     return e.target
 }
 function Verify() {
-
+    if(document.getElementById("seedinput").value.length<9)
+    {
+        alert("min.9 numbers");
+        return false;
+    } 
+    return true;
 }
 
 
