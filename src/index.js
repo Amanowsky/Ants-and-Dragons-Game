@@ -270,13 +270,11 @@ class InfoBar {
                     for(var i=0;i<world.dragonsArray.length;i++)
                     {
                         if(world.dragonsArray[i].name == InfoBar.actObject.name)
-                        {
-                            
+                        { 
                             world.dragonsArray[i].name = id;
                             world.dragonsArray[i].positionX = Number(x);
                             world.dragonsArray[i].positionY = Number(y);
                         }
-                        
                     }
                     break;
                 }
@@ -1062,7 +1060,6 @@ class Dragon {
                                 break;
                             }
                     }
-
                 }
             }
         }
